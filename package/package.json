@@ -1,0 +1,46 @@
+{
+  "name": "node-red-contrib-discord-advanced-modv2",
+  "version": "3.3.4",
+  "description": "Recieve, send, edit, reply, react to and delete Discord messages, handle interactions and much more in Node-RED.",
+  "main": "discord/discord.js",
+  "scripts": {
+    "test": "mocha \"test/**/*_spec.js\""
+  },
+  "author": "Jakkapong Jinasen",
+  "contributors": [
+    {
+      "name": "Jakkapong Jinasen",
+      "email": "eho55120@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.6.0"
+  },
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "flatted": "^3.2.5"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "node-red": {
+    "nodes": {
+      "discord-token": "discord/discord-token.js",
+      "discordMessage": "discord/discordMessage.js",
+      "discordMessageManager": "discord/discordMessageManager.js",
+      "discordPermissions": "discord/discordPermissions.js",
+      "discordReactionManager": "discord/discordReactionManager.js",
+      "discordClient": "discord/discordClient.js",
+      "discordInteraction": "discord/discordInteraction.js"
+    }
+  },
+  "devDependencies": {
+    "mocha": "^9.2.2",
+    "node-red": "^2.2.2",
+    "node-red-node-test-helper": "^0.2.7",
+    "should": "^13.2.3",
+    "should-sinon": "^0.0.6",
+    "sinon": "^13.0.2"
+  }
+}
